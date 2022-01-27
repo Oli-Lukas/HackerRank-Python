@@ -8,10 +8,10 @@ def main():
 
     students_score = [list_element[1] for list_element in records]
     second_lowest_score = sorted(list(set(students_score)))[1]
-    students = [list_element[0] for list_element in records if list_element[1] == second_lowest_score]
-    students.sort()
+    second_lowest_students = [list_element[0] for list_element in records if list_element[1] == second_lowest_score]
+    second_lowest_students.sort()
 
-    [print(name) for name in students]
+    [print(name) for name in second_lowest_students]
 
 if __name__ == '__main__':
     main()
