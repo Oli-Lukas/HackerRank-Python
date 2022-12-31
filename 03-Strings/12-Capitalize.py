@@ -2,7 +2,7 @@
 
 # Link: https://www.hackerrank.com/challenges/capitalize/problem
 
-def solve(string):
+def solve(string: str) -> str:
     wordlist = []
 
     for word in string.split(' '):
@@ -10,7 +10,7 @@ def solve(string):
     
     return ' '.join(wordlist)
 
-def main():
+def main() -> None:
     string = input()
     result = solve(string)
     print(result)
