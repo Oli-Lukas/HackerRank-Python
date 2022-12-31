@@ -3,8 +3,12 @@
 # Link: https://www.hackerrank.com/challenges/capitalize/problem
 
 def solve(string):
-    return ' '.join([word.capitalize() for word in string.split()])
-    # return ' '.join(map(str.capitalize, string.split()))
+    wordlist = []
+
+    for word in string.split(' '):
+        wordlist.append(word.capitalize())
+    
+    return ' '.join(wordlist)
 
 def main():
     string = input()
